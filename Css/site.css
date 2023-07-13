@@ -1,0 +1,200 @@
+:root{
+    --bg-nav:rgb(255, 156, 122);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+p {
+    text-align: justify;
+}
+
+.img {
+    margin: 10px;
+    display: flex;
+    width:80px;
+    border-radius: 50%;
+}
+
+.img-intro {
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 380px;
+    display: flex;
+    border-radius: 2px;
+
+}
+
+.card-maquina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.card-img-top {
+  max-width: 35%;
+  max-height: 35%;
+  margin-bottom: 30px;
+}
+
+.card-diagrama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+  }
+
+  .card-img-top {
+    max-width: 35%;
+    max-height: 35%;
+    margin-bottom: 30px;
+  }
+
+  .card-adaebabbage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+  }
+
+  .card-img-top {
+    max-width: 35%;
+    max-height: 35%;
+    margin-bottom: 30px;
+  }
+.anime-color{
+    filter:grayscale(1);
+
+}
+.anime-color:hover{
+   filter: grayscale(0.20);
+   transition: 2s;
+}
+
+.navbar-nav {
+    color: aliceblue;
+
+}
+
+.navbar{
+    background-color: var(--bg-nav);
+}
+
+.inicial {
+    color: rgb(0, 0, 0);
+    background-color: #f876d5;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 60px;
+    margin: 30px 30px 30px 30px;
+}
+
+/* Estilos do Footer */
+
+.container-footer {
+    width: 100%;
+    height: 42px;
+    padding: 20px 0;
+    margin-top: 70px;
+    background-color:#f876d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+.btn{
+    background-color: var(--bg-nav);
+}
+
+.icone {
+    width: 24px;
+}
+
+.icone--texto {
+    margin: 0 8px;
+    animation: pulsar 1s infinite alternate;
+}
+
+.footer__texto {
+    font-size: 14px;
+    font-weight: 400;
+    color: #313131;
+    display: flex;
+    align-items: center;
+  }
+
+
+@keyframes pulsar {
+    0% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos com largura de tela até 768px */
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer__texto {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Estilos para dispositivos com largura de tela até 480px */
+    .footer {
+      padding: 10px 0;
+    }
+  }
+
+.btn-fixed {
+    position: fixed;
+    bottom:55px;
+    right: 40px;
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    background-color:var(--bg-nav);
+    visibility: hidden;
+}
+
+.btn-fixed.visible {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
